@@ -4,7 +4,7 @@
  #### Overview
 
 <p align="center">
-<img src='imgs/overview.png' width=800/> 
+<img src='img/overview.png' width=800/> 
 </p>
 
 ## ✏️ 📄 Citation
