@@ -7,21 +7,6 @@
 <img src='img/overview.png' width=800/> 
 </p>
 
-## ✏️ 📄 Citation
-
-If you find our work useful in your research please consider citing our paper:
-
-```
-@article{li2025sfmdiffusion,
-  title={SfMDiffusion: self-supervised monocular depth estimation in endoscopy based on diffusion models},
-  author={Li, Yu and Chang, Da and Luo, Die and Huang, Jin and Dong, Lan and Wang, Du and Mei, Liye and Lei, Cheng},
-  journal={International Journal of Computer Assisted Radiology and Surgery},
-  pages={1--9},
-  year={2025},
-  publisher={Springer}
-}
-```
-
 ## ⚙️ Setup
 
 We ran our experiments with PyTorch 2.0, CUDA 11.8, Python 3.8 and Ubuntu 20.04.
@@ -69,8 +54,6 @@ The directory of dataset structure is shown as follows:
           0000000001.png
 ```
 
-
-
 ## ⏳ Endovis training
 
 
@@ -93,4 +76,19 @@ CUDA_VISIBLE_DEVICES=0 python export_gt_depth.py --data_path endovis_data --spli
 The following example command evaluates the epoch 19 weights of a model named `mono_model`:
 ```shell
 CUDA_VISIBLE_DEVICES=0 python evaluate_depth.py --data_path <your_data_path> --load_weights_folder ~/mono_model/mdp/models/weights_19 --eval_mono
+```
+
+## ✏️ 📄 Citation
+
+If you find our work useful in your research please consider citing our paper:
+
+```
+@article{li2025sfmdiffusion,
+  title={SfMDiffusion: self-supervised monocular depth estimation in endoscopy based on diffusion models},
+  author={Li, Yu and Chang, Da and Luo, Die and Huang, Jin and Dong, Lan and Wang, Du and Mei, Liye and Lei, Cheng},
+  journal={International Journal of Computer Assisted Radiology and Surgery},
+  pages={1--9},
+  year={2025},
+  publisher={Springer}
+}
 ```
