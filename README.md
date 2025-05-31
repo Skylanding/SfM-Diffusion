@@ -1,5 +1,5 @@
 # SfM-Diffusion
- The implement code for SfM-Diffusion code
+ The implement code for [SfM-Diffusion](https://link.springer.com/article/10.1007/s11548-025-03333-0) code
 
  #### Overview
 
